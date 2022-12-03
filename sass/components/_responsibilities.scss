@@ -5,7 +5,6 @@
   line-height: 1.1666;
   letter-spacing: 0.03em;
   color: var(--dark-grey);
-  visibility: hidden;
 
   &__box {
     display: flex;
@@ -14,7 +13,6 @@
     line-height: 0.875;
     align-items: center;
     text-align: center;
-    visibility: hidden;
   }
 
   &__name {

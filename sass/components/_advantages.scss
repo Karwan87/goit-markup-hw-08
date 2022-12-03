@@ -2,18 +2,41 @@
   display: flex;
   list-style-type: none;
   line-height: 0.875;
+  padding-left: 15px;
+  padding-right: 15px;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+  }
+  &__box {
+    max-width: 450px;
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
+  }
   &__icon-box {
     background-color: #f5f4fa;
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
   }
   &__description {
     font-weight: 400;
@@ -21,6 +44,7 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--light-grey);
+    margin-inline: 42px;
   }
 
   &__name {

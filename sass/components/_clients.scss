@@ -7,12 +7,18 @@
   color: var(--dark-grey);
 
   &__list {
-    max-width: 479px;
+    max-width: 767px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
     justify-content: center;
     margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      max-width: 1199px;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1199px) {
+      max-width: 1600px;
+    }
   }
   &__logo {
     &:hover {
@@ -39,5 +45,19 @@
     background-color: var(--white);
     fill: var(--dark-white);
     border-color: var(--blue);
+    margin: 30px;
+    width: 210px;
+    height: 92px;
+    justify-content: center;
+    @media screen and (min-width: 768px) {
+      max-width: 1199px;
+      width: 226px;
+      flex-wrap: wrap;
+    }
+    @media screen and (min-width: 1199px) {
+      max-width: 1600px;
+      width: 170px;
+      margin: 15px;
+    }
   }
 }

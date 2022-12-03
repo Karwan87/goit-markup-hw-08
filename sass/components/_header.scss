@@ -1,6 +1,6 @@
 .logo {
   width: 145px;
-  margin: 24px 93px 25px 0;
+  margin: 24px 25px 25px 0;
   display: flex;
   text-decoration: none;
   font-family: "Raleway";
@@ -19,12 +19,22 @@
   }
 }
 .nav {
-  display: flex;
-  width: 254px;
-  margin: 32px 350px 32px 0;
+  display: none;
+  width: 400px;
+  margin: 32px 50px 32px 50px;
   justify-content: space-between;
   list-style-type: none;
   line-height: 0.875;
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+    display: flex;
+  }
+  @media screen and (min-width: 1199px) {
+    max-width: 1600px;
+    margin: 32px 21px 32px 21px;
+    width: 100%;
+    justify-content: space-evenly;
+  }
   &__agency {
     &:hover {
       color: var(--blue);
@@ -60,13 +70,25 @@
   }
 }
 .contacts {
-  display: flex;
-  width: 295px;
+  display: none;
+  width: 100%;
   margin: 32px 0 32px 0;
-  justify-content: space-between;
+  justify-content: left;
   list-style-type: none;
   line-height: 0.875;
-  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1199px) {
+    max-width: 1600px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 
   &__icons {
     &:hover {
