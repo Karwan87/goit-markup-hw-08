@@ -1,0 +1,35 @@
+.responsibilities {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666;
+  letter-spacing: 0.03em;
+  color: var(--dark-grey);
+  visibility: hidden;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    line-height: 0.875;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+  }
+
+  &__name {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    bottom: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    color: var(--white);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.03em;
+  }
+}

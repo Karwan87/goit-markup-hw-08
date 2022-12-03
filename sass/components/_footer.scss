@@ -1,0 +1,158 @@
+.footer {
+  width: 100vw;
+  height: 683px;
+  background: #2f303a;
+  gap: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  justify-content: center;
+  &__details {
+    align-items: center;
+    text-align: center;
+  }
+
+  &__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+    color: var(--white);
+  }
+
+  &__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    color: var(--white);
+  }
+
+  &__social-icon {
+    fill: var(--white);
+    display: flex;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__social-icons-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__social-icons-links svg:hover {
+    fill: var(--white);
+    background-color: var(--blue);
+    border-radius: 50%;
+  }
+  &__social {
+    letter-spacing: 0.03em;
+    color: var(--white);
+    text-align: center;
+  }
+
+  &__subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 150px;
+    letter-spacing: 0.03em;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #212121;
+  }
+  &__subscribe-form-icon {
+    fill: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    transition: 250ms fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__newsletter {
+    letter-spacing: 0.03em;
+    color: var(--white);
+    justify-content: center;
+  }
+  &__subscribe {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  &__subscribe-form input {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    font-size: 16px;
+    justify-content: center;
+    color: var(--white);
+  }
+  &__subscribe-form input:focus {
+    outline: 0;
+  }
+  &__join-us {
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+  &__btn-description {
+    &:hover {
+      background: #0a2f4d;
+      color: #fcfcfc;
+    }
+    display: flex;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    background: var(--blue);
+    border-color: var(--blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.533;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--white);
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mailfieldset {
+    &:has(input:focus) {
+      border: 1px solid var(--blue);
+    }
+    box-sizing: border-box;
+    min-width: 320px;
+    max-width: 479px;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

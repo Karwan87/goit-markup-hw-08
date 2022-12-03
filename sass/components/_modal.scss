@@ -1,0 +1,165 @@
+.my-form {
+  margin-top: 30px;
+  text-align: center;
+  width: 528px;
+  height: 581px;
+  margin-left: 40px;
+  margin-right: 40px;
+  letter-spacing: 0.03em;
+  line-height: 23px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #212121;
+  &__fieldset {
+    &:has(input:focus) {
+      border: 1px solid var(--blue);
+    }
+    &:has(input:focus) .my-form__form-icon {
+      fill: var(--blue);
+    }
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    display: flex;
+    padding: 5px;
+    margin-block: 40px;
+    fill: #212121;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    height: 40px;
+    color: #757575;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: center;
+  }
+
+  &__fieldset-window {
+    position: absolute;
+    top: -16px;
+    font-size: 12px;
+  }
+  &__form-icon {
+    fill: var(--dark-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    transition: 250ms fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__conditionalfieldset {
+    &:has(textarea:focus) {
+      outline: 0;
+      border: 1px solid var(--blue);
+    }
+    top: -15px;
+    position: relative;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 0;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__conditionalfieldset &__mailfieldset {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 20px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__mailfieldset:has(input:focus) {
+    border: 1px solid var(--blue);
+  }
+
+  &__rodo {
+    max-width: 550px;
+    display: flex;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-top: 20px;
+    input:hover ~ .my-form__icon {
+      cursor: pointer;
+    }
+    input:checked ~ .my-form__icon {
+      background-color: var(--blue);
+      fill: var(--white);
+      border-color: var(--light-grey);
+    }
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    left: 54px;
+    background: #2196f3;
+    border-radius: 2px;
+    position: absolute;
+    font-size: 14px;
+    background: var(--white);
+    fill: var(--white);
+    border: 0.2px solid var(--dark-white);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__checkbox {
+    visibility: hidden;
+    max-width: 50px;
+    opacity: 0;
+    margin-top: 20px;
+  }
+  &__rodo-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
+  &__regulamine {
+    text-decoration: underline;
+    color: var(--blue);
+    cursor: pointer;
+  }
+  &__privacy {
+    text-decoration: underline;
+    color: var(--blue);
+    cursor: pointer;
+  }
+  textarea {
+    &:focus {
+      outline: none;
+    }
+    width: 100%;
+    border: none;
+    resize: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
