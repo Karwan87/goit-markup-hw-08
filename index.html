@@ -110,8 +110,8 @@
           >
         </li>
       </ul></div>
-    </div>
-   -->
+    </div> -->
+  
 
   <!-- mobile-menu-end -->
   </header>
@@ -216,12 +216,32 @@
         <ul class="team__box">
           <li>
             <figure class="team__figcaption">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/photo1-lg@1x.jpg 1x,
+                    ./images/photo1-lg@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/photo1-md@1x.jpg 1x,
+                    ./images/photo1-md@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/photo1-s@1x.jpg 1x,
+                    ./images/photo1-s@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+              <img class="team__img"
                 src="images/photo1.jpg"
-                width="270"
-                height="260"
                 alt="Pierwszy członek zespołu John Doe"
-              />
+              /></picture>
               <figcaption class="team__teammate-name">
                 John Doe
                 <p class="team__jobstatus">Product Designer</p>
@@ -237,12 +257,32 @@
           </li>
           <li>
             <figure class="team__figcaption">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/photo2-lg@1x.jpg 1x,
+                    ./images/photo2-lg@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/photo2-md@1x.jpg 1x,
+                    ./images/photo2-md@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/photo2-s@1x.jpg 1x,
+                    ./images/photo2-s@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+              <img class="team__img"
                 src="images/photo2.jpg"
-                width="270"
-                height="260"
                 alt="Drugi członek zespołu John Doe"
-              />
+              /></picture>
 
               <figcaption class="team__teammate-name">
                 John Doe
@@ -259,12 +299,31 @@
           </li>
           <li>
             <figure class="team__figcaption">
-              <img
+              <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/photo3-lg@1x.jpg 1x,
+                      ./images/photo3-lg@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/photo3-md@1x.jpg 1x,
+                      ./images/photo3-md@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/photo3-s@1x.jpg 1x,
+                      ./images/photo3-s@2x.jpg 2x
+                    "
+                    type="image/jpg" />
+              <img class="team__img"
                 src="images/photo3.jpg"
-                width="270"
-                height="260"
                 alt="Trzeci członek zespołu John Doe"
-              />
+              /></picture>
 
               <figcaption class="team__teammate-name">
                 John Doe
@@ -281,13 +340,33 @@
           </li>
           <li>
             <figure class="team__figcaption">
-              <img
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/photo4-lg@1x.jpg 1x,
+                    ./images/photo4-lg@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/photo4-md@1x.jpg 1x,
+                    ./images/photo4-md@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/photo4-s@1x.jpg 1x,
+                    ./images/photo4-s@2x.jpg 2x
+                  "
+                  type="image/jpg" />
+              <img class="team__img"
                 src="images/photo4.jpg"
-                width="270"
-                height="260"
                 alt="Czwarty członek zespołu John Doe"
               />
-
+            </picture>
               <figcaption class="team__teammate-name">
                 John Doe
                 <p class="team__jobstatus">UI Designer</p>

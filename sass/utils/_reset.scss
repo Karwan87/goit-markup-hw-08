@@ -113,4 +113,10 @@ li {
 }
 .container {
   display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
 }
