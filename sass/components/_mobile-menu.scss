@@ -11,9 +11,9 @@
   z-index: 3;
 
   &__wrapper {
-    min-width: 320px;
+    width: 100%;
     position: relative;
-    margin: 48px 40px;
+    padding: 48px 40px;
     height: 100vh;
   }
   &__button {
@@ -40,9 +40,10 @@
       box-shadow: 0 0 0 0;
     }
   }
-  &__button--x {
+  &__close-button {
     position: absolute;
-    left: 425px;
+    z-index: 3;
+    right: 15px;
     top: 10px;
     width: 40px;
     height: 40px;
@@ -54,21 +55,26 @@
 
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &__btn:hover,
-    &__btn:focus {
-      background-color: var(--blue);
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      box-shadow: none;
     }
   }
   &--icon {
     &:hover,
     &:focus {
-      fill: var(--blue);
+      fill: var(--white);
       background-color: #fff;
       box-shadow: none;
     }
   }
-
+  &--icon-close {
+    &:hover,
+    &:focus {
+      fill: var(--blue);
+    }
+  }
   &__link-nav {
     font-weight: 500;
     font-size: 40px;
@@ -85,7 +91,7 @@
   }
   &__list-contact {
     flex-direction: column;
-    flex-wrap: wrap;
+
     gap: 32px;
     position: absolute;
     bottom: 176px;
@@ -126,10 +132,10 @@
     @media screen and (max-width: 320px) {
       font-size: 15px;
     }
-    &__item-social:not(:last-child) &__link-social {
-      display: flex;
-      padding-right: 10px;
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
+  }
+  &__item-social:not(:last-child) &__link-social {
+    display: flex;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }

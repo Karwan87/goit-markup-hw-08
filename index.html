@@ -39,9 +39,9 @@
     <!-- mobile-menu -->
    
     <div class="mobile-menu d-none">
-      <button class="mobile-menu__button--x">
-        <svg class="mobile-menu--icon" width="19px" height="19px">
-          <use href="./images/icons.svg#icon-close_24px"></use>
+      <button class="mobile-menu__close-button">
+        <svg  width="19px" height="19px">
+          <use class="mobile-menu--icon-close" href="./images/icons.svg#icon-close_24px"></use>
         </svg>
       </button>
       <div class="mobile-menu__wrapper">
@@ -287,7 +287,7 @@
               <figcaption class="team__teammate-name">
                 John Doe
                 <p class="team__jobstatus">Frontend Developer</p>
-                <div>
+                <div class="social-icons">
                   <p class="team__social-links">
                     <svg class="team__social-links-icons" width="44px" height="44px"><use href="./images/SVG/icons.svg#icon-instagram"></use></svg>
                   <svg class="team__social-links-icons" width="44px" height="44px"><use href="./images/SVG/icons.svg#icon-twitter" ></use></svg>
@@ -299,7 +299,7 @@
           </li>
           <li>
             <figure class="team__figcaption">
-              <source
+              <picture><source
                     media="(min-width: 1200px)"
                     srcset="
                       ./images/photo3-lg@1x.jpg 1x,
