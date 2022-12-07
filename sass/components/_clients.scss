@@ -13,9 +13,10 @@
     justify-content: center;
     margin: 0 auto;
     @media screen and (min-width: 768px) {
-      max-width: 1199px;
+      max-width: 1200px;
     }
-    @media screen and (min-width: 1199px) {
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
       max-width: 1600px;
     }
   }
@@ -44,12 +45,14 @@
     background-color: var(--white);
     fill: var(--dark-white);
     border-color: var(--blue);
-    margin: 15px;
+    margin: 30px;
     width: 210px;
     height: 92px;
     justify-content: center;
+    flex-basis: 210px;
     @media screen and (min-width: 768px) {
       flex-basis: 226px;
+      margin: 15px;
     }
     @media screen and (min-width: 1200px) {
       flex-basis: 170px;

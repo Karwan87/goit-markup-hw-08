@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
   </head>
   <body>
     <header class="header">
@@ -20,6 +20,11 @@
               ><span class="logo__web">Web</span>
               <span class="logo__studio">Studio</span></a
             >
+            <button class="mobile-menu__button" type="button" data-menu-open>
+              <svg class="mobile-menu__icon" width="40px" height="40px">
+                <use href="./images/SVG/icons.svg#icon-menu_24px"></use>
+              </svg>
+            </button>
         <ul class="nav">
           <li><a class="nav__agency active-link" href="./index.html">Agencja</a></li>
           <li><a class="nav__portfolio" href="./portfolio.html">Portfolio</a>
@@ -41,7 +46,7 @@
     <div class="mobile-menu d-none">
       <button class="mobile-menu__close-button">
         <svg  width="19px" height="19px">
-          <use class="mobile-menu--icon-close" href="./images/icons.svg#icon-close_24px"></use>
+          <use class="mobile-menu--icon-close" href="./images/SVG/icons.svg#icon-close_24px"></use>
         </svg>
       </button>
       <div class="mobile-menu__wrapper">
@@ -60,8 +65,8 @@
       </ul>
       <ul class="mobile-menu__list-contact">
         <li class="">
-          <a class="mobile-menu__list-contact--tel" href="tel:+380961111111"
-            >+38 096 111 11 11</a
+          <a class="mobile-menu__list-contact--tel" href="tel:+481111111"
+            >+48 111 11 11</a
           >
         </li>
         <li class="">
@@ -116,7 +121,7 @@
   <!-- mobile-menu-end -->
   </header>
     <main>
-      <section class="section slider">
+      <section class="section hero">
         <div >
           <h1 class="title">EFEKTYWNE ROZWIĄZANIA <p>DLA WASZEGO BIZNESU</p></h1>
           <div><button class="btn-text" type="button" data-modal-open>Zamów usługę</button>
@@ -501,7 +506,7 @@
         </form>
       </div>
     </div>
-        <script src="./css/js/modal.js"></script>
-        <script src="./css/js/mobile-menu.js"></script>
+        <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
