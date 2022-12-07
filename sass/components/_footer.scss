@@ -9,13 +9,16 @@
   margin: 0 auto;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: row;
+    height: 463px;
+  }
+
+  @media screen and (min-width: 1200px) {
     height: 252px;
   }
+
   &__details {
     align-items: center;
     text-align: center;

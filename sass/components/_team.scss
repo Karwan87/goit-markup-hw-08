@@ -6,21 +6,35 @@
   letter-spacing: 0.03em;
   color: var(--dark-grey);
   background: #f5f4fa;
+  &__boxfield {
+    display: flex;
+    flex-wrap: nowrap;
 
+    @media screen and (min-width: 768px) {
+      max-width: 354px;
+      display: flex;
+      flex-direction: row;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1600px;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+  }
   &__box {
     list-style-type: none;
     line-height: 0.875;
-    justify-content: space-around;
+    justify-content: center;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     gap: 30px;
     min-width: 320px;
-    max-width: 100%;
+    max-width: 450px;
     @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 30px;
+      max-width: 738px;
+      width: 100%;
+      gap: 15px;
     }
     @media screen and (min-width: 1200px) {
       max-width: 1600px;
@@ -42,15 +56,17 @@
       @media screen and (max-width: 768px) {
         width: 450px;
         height: 460px;
+        max-width: 100%;
       }
       @media screen and (min-width: 768px) {
         width: 354px;
         height: 374px;
-        max-width: 768px;
+        max-width: 100%;
       }
       @media screen and (min-width: 1200px) {
         width: 270px;
         height: 260px;
+        max-width: 100%;
       }
     }
   }
