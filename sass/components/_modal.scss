@@ -1,12 +1,13 @@
 .my-form {
   margin-top: 30px;
   text-align: center;
-  width: 450px;
-  height: 609px;
+  max-width: 100%;
+  font-family: "roboto";
+  height: 100%;
   margin-left: 40px;
   margin-right: 40px;
   letter-spacing: 0.03em;
-  line-height: 23px;
+  line-height: 30px;
   font-size: 20px;
   font-weight: 700;
   color: #212121;
@@ -89,7 +90,7 @@
   }
 
   &__rodo {
-    max-width: 550px;
+    max-width: 100%;
     display: flex;
     font-family: "Roboto";
     font-style: normal;
@@ -112,8 +113,8 @@
   &__icon {
     width: 16px;
     height: 16px;
-    margin-top: 3px;
-    left: 54px;
+    margin-top: -2px;
+    left: 42px;
     background: #2196f3;
     border-radius: 2px;
     position: absolute;
@@ -127,7 +128,7 @@
   }
   &__checkbox {
     visibility: hidden;
-    max-width: 50px;
+    max-width: 20px;
     opacity: 0;
     margin-top: 20px;
   }
@@ -135,8 +136,9 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 10px;
+    text-align: center;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: #757575;
   }

@@ -98,4 +98,12 @@ li {
     align-items: baseline;
     width: 100%;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+  }
 }
