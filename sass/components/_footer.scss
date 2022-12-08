@@ -9,7 +9,8 @@
   margin: 0 auto;
   justify-content: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    margin: 0;
     display: flex;
     flex-direction: row;
     height: 463px;
@@ -17,15 +18,23 @@
 
   @media screen and (min-width: 1200px) {
     height: 252px;
+    display: row;
+    margin: auto;
   }
 
   &__details {
     align-items: center;
     text-align: center;
     @media screen and (min-width: 768px) {
+      width: 253px;
+      display: inline-table;
+      margin: auto;
     }
     @media screen and (min-width: 1200px) {
+      display: row;
       text-align: left;
+      width: 246px;
+      max-width: 100%;
     }
   }
 
@@ -37,6 +46,7 @@
     margin-bottom: 20px;
     letter-spacing: 0.03em;
     color: var(--white);
+    justify-content: center;
   }
 
   &__address {
@@ -47,10 +57,12 @@
     letter-spacing: 0.03em;
     color: var(--white);
     @media screen and (min-width: 768px) {
+      margin: auto;
+      align-items: center;
     }
     @media screen and (min-width: 1200px) {
       flex-direction: row;
-      margin: 0 auto;
+      margin: auto;
     }
   }
 
@@ -85,6 +97,15 @@
     letter-spacing: 0.03em;
     color: var(--white);
     text-align: center;
+    @media screen and (min-width: 768px) {
+      display: inline-table;
+      margin: auto;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0 auto;
+      width: 208px;
+      max-width: 100%;
+    }
   }
 
   &__subscribe-form {
@@ -103,7 +124,7 @@
     }
     @media screen and (min-width: 1200px) {
       display: flex;
-      max-width: 100%;
+      max-width: 570px;
       height: 50px;
       justify-content: center;
       align-items: center;
@@ -123,6 +144,14 @@
     letter-spacing: 0.03em;
     color: var(--white);
     justify-content: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: column;
+      max-width: 738px;
+      width: 100%;
+    }
+    @media screen and (min-width: 1200px) {
+      display: inline;
+    }
   }
   &__subscribe {
     font-size: 14px;
@@ -171,7 +200,6 @@
     display: flex;
     width: 200px;
     height: 50px;
-    margin: auto;
     background: var(--blue);
     border-color: var(--blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -193,14 +221,21 @@
       border: 1px solid var(--blue);
     }
     box-sizing: border-box;
-    max-width: 479px;
+    width: 450px;
     height: 50px;
+    margin-bottom: 20px;
     @media screen and (max-width: 480px) {
       max-width: 100%;
       justify-content: center;
     }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
     @media screen and (min-width: 1200px) {
       width: 358px;
+      margin-bottom: 0;
+      max-width: 100%;
+      margin-right: 12px;
     }
 
     display: flex;

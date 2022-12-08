@@ -35,6 +35,8 @@
       max-width: 738px;
       width: 100%;
       gap: 15px;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
     @media screen and (min-width: 1200px) {
       max-width: 1600px;
