@@ -1,5 +1,5 @@
 const menuOverlay = document.querySelector(".mobile-menu");
-const closeMenuButton = document.querySelector(".mobile-menu__close-button");
+const closeMenuButton = document.querySelector(".mobile-menu__button--x");
 const openMenuBtn = document.querySelector(".mobile-menu__button");
 
 openMenuBtn.addEventListener("click", (e) => {

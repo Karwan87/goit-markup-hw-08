@@ -11,15 +11,15 @@
   z-index: 3;
 
   &__wrapper {
-    width: 100%;
+    min-width: 320px;
     position: relative;
-    padding: 48px 40px;
+    margin: 48px 40px;
     height: 100vh;
   }
   &__button {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
 
     background-color: transparent;
     display: inline-flex;
@@ -40,11 +40,10 @@
       box-shadow: 0 0 0 0;
     }
   }
-  &__close-button {
+  &__button--x {
     position: absolute;
-    z-index: 3;
-    top: 20px;
-    right: 20px;
+    left: 425px;
+    top: 10px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -55,33 +54,26 @@
 
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      fill: var(--blue);
-      background-color: transparent;
-      box-shadow: none;
+
+    &__btn:hover,
+    &__btn:focus {
+      background-color: var(--blue);
     }
   }
   &--icon {
     &:hover,
     &:focus {
-      fill: var(--white);
+      fill: var(--blue);
       background-color: #fff;
       box-shadow: none;
     }
   }
-  &--icon-close {
-    &:hover,
-    &:focus {
-      fill: var(--blue);
-    }
-  }
+
   &__link-nav {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--dark-grey);
     &:hover,
     &:focus {
       color: var(--blue);
@@ -89,38 +81,38 @@
   }
   &__list-nav {
     flex-direction: column;
-    display: flex;
     gap: 32px;
   }
   &__list-contact {
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 32px;
+    position: absolute;
+    bottom: 176px;
   }
   &__list-contact--tel {
     font-weight: 500;
     font-size: 34px;
     line-height: 1.2;
+
     letter-spacing: 0.02em;
-    display: flex;
-    margin-top: 252px;
-    margin-bottom: 32px;
+
     color: var(--blue);
   }
   &__list-contact--email {
     font-weight: 500;
     font-size: 24px;
     line-height: 1.2;
-    position: absolute;
     letter-spacing: 0.02em;
+
     color: var(--light-grey);
-    width: 100%;
   }
   &__list-social {
     display: flex;
     flex-wrap: wrap;
     position: absolute;
     bottom: 90px;
-    max-width: 100vw;
+
     gap: 20px;
   }
 
@@ -134,11 +126,10 @@
     @media screen and (max-width: 320px) {
       font-size: 15px;
     }
-  }
-  &__item-social:not(:last-child) &__link-social {
-    display: flex;
-    justify-content: center;
-    padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    &__item-social:not(:last-child) &__link-social {
+      display: flex;
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
   }
 }
