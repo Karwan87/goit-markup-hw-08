@@ -19,10 +19,8 @@ ul {
     background: #0a2f4d;
     color: #fcfcfc;
   }
-  margin-bottom: 30px;
   width: 200px;
   height: 50px;
-  margin-top: 30px;
   background: var(--blue);
   border-color: var(--blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -73,4 +71,31 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin: auto auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.positioning {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin: auto auto;
+  max-height: 100%;
+  width: 365px;
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+  }
 }

@@ -7,8 +7,10 @@
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
   @media screen and (min-width: 768px) {
-    max-width: 1199px;
+    max-width: 738px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
@@ -16,15 +18,17 @@
   &__box {
     max-width: 450px;
     @media screen and (min-width: 768px) {
-      max-width: 354px;
+      max-width: 324px;
+      width: 100%;
     }
     @media screen and (min-width: 1200px) {
       max-width: 270px;
+      width: 100%;
     }
   }
   &__icon-box {
     background-color: #f5f4fa;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     border-radius: 4px;
     display: flex;
@@ -32,10 +36,11 @@
     align-items: center;
     margin: 0 auto;
     @media screen and (min-width: 768px) {
-      width: 354px;
+      max-width: 324px;
     }
     @media screen and (min-width: 1200px) {
       max-width: 270px;
+      flex-direction: row;
     }
   }
   &__description {
@@ -45,6 +50,16 @@
     letter-spacing: 0.03em;
     color: var(--light-grey);
     margin-inline: 42px;
+    text-align: left;
+    @media screen and (min-width: 768px) {
+      max-width: 324px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+      text-align: center;
+    }
   }
 
   &__name {

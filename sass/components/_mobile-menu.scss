@@ -9,17 +9,18 @@
   height: 100vh;
   background-color: var(--white);
   z-index: 3;
+  display: column;
 
   &__wrapper {
-    min-width: 320px;
+    width: 100%;
     position: relative;
-    margin: 48px 40px;
-    height: 100vh;
+    padding: 48px 40px;
+    height: 520px;
   }
   &__button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
 
     background-color: transparent;
     display: inline-flex;
@@ -40,10 +41,11 @@
       box-shadow: 0 0 0 0;
     }
   }
-  &__button--x {
+  &__close-button {
     position: absolute;
-    left: 425px;
-    top: 10px;
+    z-index: 3;
+    top: 20px;
+    right: 20px;
     width: 40px;
     height: 40px;
     display: flex;
@@ -54,26 +56,33 @@
 
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &__btn:hover,
-    &__btn:focus {
-      background-color: var(--blue);
+    &:hover,
+    &:focus {
+      fill: var(--blue);
+      background-color: transparent;
+      box-shadow: none;
     }
   }
   &--icon {
     &:hover,
     &:focus {
-      fill: var(--blue);
+      fill: var(--white);
       background-color: #fff;
       box-shadow: none;
     }
   }
-
+  &--icon-close {
+    &:hover,
+    &:focus {
+      fill: var(--blue);
+    }
+  }
   &__link-nav {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    color: var(--dark-grey);
     &:hover,
     &:focus {
       color: var(--blue);
@@ -81,22 +90,26 @@
   }
   &__list-nav {
     flex-direction: column;
+    display: flex;
     gap: 32px;
+  }
+  &__contacts {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    margin: 40px 48px;
   }
   &__list-contact {
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 32px;
-    position: absolute;
-    bottom: 176px;
   }
   &__list-contact--tel {
     font-weight: 500;
     font-size: 34px;
+    margin-bottom: 32px;
     line-height: 1.2;
-
     letter-spacing: 0.02em;
-
+    display: flex;
     color: var(--blue);
   }
   &__list-contact--email {
@@ -104,7 +117,6 @@
     font-size: 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-
     color: var(--light-grey);
   }
   &__list-social {
@@ -112,7 +124,6 @@
     flex-wrap: wrap;
     position: absolute;
     bottom: 90px;
-
     gap: 20px;
   }
 
@@ -126,10 +137,11 @@
     @media screen and (max-width: 320px) {
       font-size: 15px;
     }
-    &__item-social:not(:last-child) &__link-social {
-      display: flex;
-      padding-right: 10px;
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
+  }
+  &__item-social:not(:last-child) &__link-social {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 }

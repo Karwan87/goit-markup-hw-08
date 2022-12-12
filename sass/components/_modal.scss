@@ -1,15 +1,17 @@
 .my-form {
   margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
-  width: 528px;
-  height: 581px;
-  margin-left: 40px;
-  margin-right: 40px;
+  max-width: 100%;
+  width: 370px;
+  font-family: "roboto";
+  height: 100%;
   letter-spacing: 0.03em;
-  line-height: 23px;
+  line-height: 30px;
   font-size: 20px;
   font-weight: 700;
   color: #212121;
+
   &__fieldset {
     &:has(input:focus) {
       border: 1px solid var(--blue);
@@ -22,7 +24,10 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     display: flex;
     padding: 5px;
-    margin-block: 40px;
+    margin-top: 28px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 28px;
     fill: #212121;
     font-weight: 400;
     font-size: 12px;
@@ -53,12 +58,14 @@
       outline: 0;
       border: 1px solid var(--blue);
     }
-    top: -15px;
+
     position: relative;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    max-width: 100%;
+    margin-top: 28px;
+    margin-inline: 20px;
     padding: 0;
-    margin-top: 40px;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -89,7 +96,7 @@
   }
 
   &__rodo {
-    max-width: 550px;
+    max-width: 100%;
     display: flex;
     font-family: "Roboto";
     font-style: normal;
@@ -112,8 +119,8 @@
   &__icon {
     width: 16px;
     height: 16px;
-    margin-top: 3px;
-    left: 54px;
+    margin-top: -2px;
+    left: 20px;
     background: #2196f3;
     border-radius: 2px;
     position: absolute;
@@ -127,7 +134,7 @@
   }
   &__checkbox {
     visibility: hidden;
-    max-width: 50px;
+    max-width: 20px;
     opacity: 0;
     margin-top: 20px;
   }
@@ -135,8 +142,12 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: fit-content;
+    text-align: center;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: #757575;
   }
